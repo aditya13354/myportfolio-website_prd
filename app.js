@@ -42,23 +42,6 @@ app.get("/index", function(req, res){
 	res.render("statics/index", {email:lindsayEmailAddress, path:req.url});
 });
 
-// ABOUT
-app.get("/portfolio", function(req, res){
-	// console.log("req.url >> ", req.url);
-	res.render("statics/portfolio", {email:lindsayEmailAddress, path:req.url});
-});
-
-// RESUME
-app.get("/resume", function(req, res){
-	// console.log("req.url >> ", req.url);
-	res.render("statics/resume", {email:lindsayEmailAddress, path:req.url});
-});
-
-// BLOG - HOSTED ON TUMBLR
-app.get("/blog", function(req, res){
-	res.redirect("http://blog.lindsayelia.com/");
-});
-
 // FALLBACK ROUTE
 app.get("*", function(req, res){
 	res.render("errors/404", {email:lindsayEmailAddress, path:req.url});
@@ -69,8 +52,8 @@ app.get("*", function(req, res){
 //____________START SERVER____________
 
 // process.env.PORT is whatever port we tell Heroku as an environment variable
-app.listen(process.env.PORT || 3000, function(){
-	console.log("Server starting on port: 3000");
+app.listen(8080, function(){
+	console.log("Server starting on port: 8080");
 });
 
 
