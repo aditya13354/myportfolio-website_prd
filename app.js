@@ -23,8 +23,7 @@ app.use(morgan("tiny")); // less text in our logs??
 require('dotenv').load();
 
 // hide my email address for GitHub
-var lindsayEmailAddress = process.env.LINDSAY_EMAIL;
-console.log("my email >> ", lindsayEmailAddress);
+
 
 
 
@@ -33,14 +32,11 @@ console.log("my email >> ", lindsayEmailAddress);
 
 // ROOT
 app.get("/", function(req, res){
-	res.redirect("/index");
+	res.send("/index");
 });
 
 // INDEX PAGE
-app.get("/index", function(req, res){
-	// console.log("req.url >> ", req.url);
-	res.render("statics/index", {email:lindsayEmailAddress, path:req.url});
-});
+
 
 // FALLBACK ROUTE
 app.get("*", function(req, res){
