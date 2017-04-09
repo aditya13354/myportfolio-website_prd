@@ -1,0 +1,229 @@
+<% include ../partials/header-tags %>
+
+<!-- Slick javascript -->
+<script type="text/javascript" src="/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/slick-image-carousel.js"></script>
+
+<% include ../partials/header-navbar %>
+
+
+<div class="container-main-content"> 
+
+
+	<div class="summary-section">
+		<h1>Made With Code</h1>
+		<p>Whether working with people or lines of code, I strive to be thoughtful, empathetic, and understandable. Common themes found in my work are ease of use, organization, clean design, and accessibility.</p>
+		<p>I work primarily in Front End and Full Stack Web Development. I most enjoy writing plain CSS and JavaScript, and am familiar with widely used web application frameworks such as Node/Express, Angular, and Ruby/Rails.</p>
+	</div>
+
+
+	<div class="container-project-group clearfix"> 
+	<!-- 
+	* Dynamically adding & removing class 'clearfix' from this div after adding slick image carousel, loading from js/slick-image-carousel.js linked to at top of this file.
+	* Deason for this is noted in that file.
+	* Keeping clearfix class on this element in case page is loaded wider than 801px, 
+	the floats won't collapse this parent element and we don't see the lines before the page 
+	iss fully loaded. There is still a bit of wonkiness but it's less noticeable than seeing
+	all of the lines like we did before I changed this.
+	* Also I moved the loading of the slick js file to the top instead of from the 
+	bottom. hopefully that won't break anything! it seems to be ok for now.
+	!-->
+
+		<div class="column-one"> 
+			<div class="slick-fade-one">
+				<div><img src="img/everyones-photos-1.png" alt="everyones photos application screenshot 1 of 6" class="portfolio-image"></div>
+				<div><img src="img/everyones-photos-2.png" alt="everyones photos application screenshot 2 of 6" class="portfolio-image"></div>
+				<div><img src="img/everyones-photos-3.png" alt="everyones photos application screenshot 3 of 6" class="portfolio-image"></div>
+				<div><img src="img/everyones-photos-4.png" alt="everyones photos application screenshot 4 of 6" class="portfolio-image"></div>
+				<div><img src="img/everyones-photos-5.png" alt="everyones photos application screenshot 5 of 6" class="portfolio-image"></div>
+				<div><img src="img/everyones-photos-6.png" alt="everyones photos application screenshot 6 of 6" class="portfolio-image"></div>
+			</div>
+			<nav class="slick-dots-and-arrows-one"></nav>
+		</div>
+
+		<div class="column-two">
+
+			<h2>Everyone's Photos</h2>
+
+			<p>Collaborative family photo album with a single-page display for your whole family’s
+			photos. Key considerations were to make the application accessible, user-friendly, and mobile-friendly.</p>
+<!-- 		<p>The target end user is someone who wants to keep in touch with their family, does not want to login to various 
+			services to do so, and accesses the internet on a mobile device, such as an iPad, rather than a desktop computer.</p> -->
+			<p>Users create a login, create a family group, invite family members to join their group via email, and authorize this application to access their photo data on Flickr, Instagram and/or Facebook. The application then displays all users' photo data from the group on a single page with a custom URL that does not require a login to be viewed.</p>
+			<p>Built with: JavaScript, NodeJS, ExpressJS, MongoDB, Mongoose, HTML, CSS, jQuery, Mandrill, and APIs for Flickr, Instagram and Facebook. OAuth sign-in for the APIs was created manually.</p>
+
+			<ul>
+				<li><a href="http://everyonesphotos.com/index" target="blank">View Demo</a></li>
+				<li><a href="https://github.com/LindsayElia/family-photo-album" target="blank">View code on GitHub</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+
+<!-- TO FIX - ADD SREENSHOTS, EDIT SUMMARY, INCLUDE WHICH PARTS I WORKED ON SPECIFICALLY, EDIT STACK/API DETAILS, UPDATE LINKS,  -->
+	<div class="container-project-group clearfix">
+	<!-- see comment on first instance of container-project-group for more about clearfix !-->
+
+		<div class="column-one">
+			<div class="slick-fade-two">
+				<img src="img/twixt-1.png" alt="twixt application screenshot" class="portfolio-image">
+			</div>
+			<nav class="slick-dots-and-arrows-two"></nav>
+		</div>
+
+		<div class="column-two">
+
+			<h2>Twixt</h2>
+
+			<p>A four day, three person team project, where we built a group communication tool for event planning and coordination.</p>
+			<p>Users can create task or shopping lists, manage group members, and send email or text message reminders out to group members.</p>
+			<p>My project contributions included modeling data, building a password reset feature, and project management.</p>
+			<p>Built with: Ruby, Rails, PostgreSQL, HTML, CSS, jQuery, Mandrill, Uploadcare, and APIs for Twilio and Google OAuth.</p>
+
+			<ul>
+				<li><a href="https://twixtapp.herokuapp.com/" target="blank">View Demo</a></li>
+				<li><a href="https://github.com/LindsayElia/twixt" target="blank">View code on GitHub</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+
+	<div class="container-project-group clearfix">
+	<!-- see comment on first instance of container-project-group for more about clearfix !-->
+
+		<div class="column-one">
+			<div class="slick-fade-three">
+				<img src="img/spotify-game-3.png" alt="spotify game screenshot 3 of 5" class="portfolio-image">
+				<img src="img/spotify-game-4.png" alt="spotify game screenshot 4 of 5" class="portfolio-image">
+				<img src="img/spotify-game-5.png" alt="spotify game screenshot 5 of 5" class="portfolio-image">
+				<img src="img/spotify-game-2.png" alt="spotify game screenshot 2 of 5" class="portfolio-image">
+			</div>
+			<nav class="slick-dots-and-arrows-three"></nav>
+		</div>
+
+		<div class="column-two">
+
+			<h2>Spotify Guessing Game</h2>
+
+			<p>Using the Spotify API, I created a game where Spotify users can login using their Spotify accounts and guess songs by title or artist from a random selection of their own playlists.</p>
+			<p>This game requires audio to play.</p>
+			<p>Built with: JavaScript, NodeJS, ExpressJS, MongoDB, Mongoose, HTML, CSS, jQuery and Spotify API.</p>
+
+			<ul>
+				<li><a href="http://spotify-guessing-game.herokuapp.com/index" target="blank">View Demo</a></li>
+				<li><a href="https://github.com/LindsayElia/spotify-guessing-game" target="blank">View code on GitHub</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+<!-- TO FIX - ADD SREENSHOTS, EDIT SUMMARY, INCLUDE WHICH PARTS I WORKED ON SPECIFICALLY, EDIT STACK/API DETAILS, UPDATE LINKS,  -->
+	<div class="container-project-group clearfix">
+	<!-- see comment on first instance of container-project-group for more about clearfix !-->
+
+		<div class="column-one">
+			<div class="slick-fade-four">
+				<!-- Am also using this first image in the header as a meta tag for image previews
+				If I change it here, should change it there -->
+				<img src="img/lindsayelia-com-1.png" alt="portfolio site screenshot 1 of 3" class="portfolio-image">
+				<img src="img/lindsayelia-com-2.png" alt="portfolio site screenshot 2 of 3" class="portfolio-image">
+				<img src="img/lindsayelia-com-3.png" alt="portfolio site screenshot 3 of 3" class="portfolio-image">
+			</div>
+			<nav class="slick-dots-and-arrows-four"></nav>
+		</div>
+
+		<div class="column-two">
+
+			<h2>lindsayelia.com</h2>
+
+			<p>Personal portfolio website using dynamic routing and responsive design. This website!</p>
+
+			<p>Built with: JavaScript, NodeJS, ExpressJS, HTML, CSS, jQuery.</p>
+
+			<p>I created a custom <a href="https://www.tumblr.com/docs/en/custom_themes" target="blank">Tumblr theme</a> for the blog pages and deployed a Node application to a custom hosting provider, <a href="https://asmallorange.com/" target="blank">A Small Orange</a>.</p>
+
+			<p>Icons attributed to <a href="http://semantic-ui.com/elements/icon.html" target="blank">Semantic UI</a>. Curlicue animation on home page attributed to <a href="http://codepen.io/tholman/pen/EpfLs/" target="blank">Tim Holman's Codepen</a>. Image carousels on portfolio page created using <a href="http://kenwheeler.github.io/slick/" target="blank">Slick</a>.</p>
+
+			
+			<ul>
+				<li><a href="https://github.com/LindsayElia/portfolio-site" target="blank">View code on GitHub</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+
+	<div class="container-project-group clearfix">
+	<!-- see comment on first instance of container-project-group for more about clearfix !-->
+
+		<div class="column-one">
+			<div class="slick-fade-five">
+				<img src="img/paperjs-a-sketch-1.png" alt="Paper.js-A-Sketch screenshot 1 of 4" class="portfolio-image">
+				<img src="img/paperjs-a-sketch-2.png" alt="Paper.js-A-Sketch screenshot 2 of 4" class="portfolio-image">
+				<img src="img/paperjs-a-sketch-3.png" alt="Paper.js-A-Sketch screenshot 3 of 4" class="portfolio-image">
+				<img src="img/paperjs-a-sketch-4.png" alt="Paper.js-A-Sketch screenshot 4 of 4" class="portfolio-image">
+			</div>
+			<nav class="slick-dots-and-arrows-five"></nav>
+		</div>
+
+		<div class="column-two">
+
+			<h2>Paper.js-A-Sketch</h2>
+
+			<p>Working with the <a href="http://paperjs.org/" target="blank">Paper.js Library</a>, I recreated one of my favorite childhood games. If you are unfamiliar with an Etch A Sketch toy, I recommend watching <a href="https://www.youtube.com/watch?v=xTdTX2e4dJY" target="blank">this video</a> of someone using one.</p>
+			<p>Users can create a pencil-line sketch using the arrow keys on their keyboard.</p>
+			<p>This game does not require audio to play, although there is an audio element when the 'erase' button is clicked.</p>
+			<p>Built with: JavaScript, HTML, CSS, and Paper.js library.</p>
+
+			<ul>
+				<li><a href="http://lindsayelia.github.io/etch-a-sketch/" target="blank">View Demo</a></li>
+				<li><a href="https://github.com/LindsayElia/etch-a-sketch" target="blank">View code on GitHub</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+
+	<div class="container-project-group clearfix">
+	<!-- see comment on first instance of container-project-group for more about clearfix !-->
+
+		<div class="column-one">
+			<div class="slick-fade-six">
+				<img src="img/click-art-1.png" alt="Click Art game screenshot 1 of 3" class="portfolio-image">
+				<img src="img/click-art-2.png" alt="Click Art game screenshot 2 of 3" class="portfolio-image">
+				<img src="img/click-art-3.png" alt="Click Art game screenshot 3 of 3" class="portfolio-image">
+			</div>
+			<nav class="slick-dots-and-arrows-six"></nav>
+		</div>
+
+		<div class="column-two">
+
+			<h2>Pixel Art Maker</h2>
+
+			<p>A simple interactive art game where users can select from a randomly generated color palette to create pixelated art.</p>
+			<p>The entire project was created with plain JavaScript for practicing DOM manipulation. No direct HTML or CSS was used.</p>
+
+			<ul>
+				<li><a href="http://lindsayelia.github.io/click-art/" target="blank">View Demo</a></li>
+				<li><a href="https://github.com/LindsayElia/click-art" target="blank">View code on GitHub</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+
+
+</div> <!-- close <div id="mainContent"> -->
+
+
+
+<% include ../partials/footer-navbar %>
+<% include ../partials/footer-tags %>
