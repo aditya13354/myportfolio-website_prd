@@ -47,9 +47,16 @@ app.get("*", function(req, res){
 
 //____________START SERVER____________
 
+
+var port = process.env.PORT || 3000;
+
+    var server = app.listen(port, function () {
+        console.log('Server running at http://127.0.0.1:' + port + '/');
+    });
+
 // process.env.PORT is whatever port we tell Heroku as an environment variable
-app.listen(3000, function(){
-	console.log("Server starting on port: 8080");
-});
+//app.listen(3000, function(){
+	//console.log("Server starting on port: 8080");
+//}); //
 
 
